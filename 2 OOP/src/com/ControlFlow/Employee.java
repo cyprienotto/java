@@ -25,7 +25,7 @@ public class Employee {
             throw new IllegalArgumentException("salary is not négative");
         this.baseSalary = baseSalary;
     }
-    public int getBaseSalary() {
+    private int getBaseSalary() {
         return this.baseSalary;
     }
 }
