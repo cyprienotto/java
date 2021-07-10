@@ -5,6 +5,21 @@ package com.Inheritance;
 public class Main {
 
     public static void main(String[] args) {
-        // var uicontrol = new UIControl();
+        UIControl[] controls = { new TextBox(), new CheckBox()};
+        for ( var control : controls ) {
+            control.render();
+        }
     }
+
+
+
+    /*
+    public static void show(UIControl control) {
+        if(control instanceof TextBox) {
+            var textBox = (TextBox) control;
+            textBox.setText("Hello Upcasting Downcasting");
+        }
+        System.out.println(control);
+    }
+    */
 }
