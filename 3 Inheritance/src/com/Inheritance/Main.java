@@ -8,6 +8,8 @@ public class Main {
         // var uicontrol = new UIControl();
     }
 
+    
+
     public static void show(UIControl control) {
         if(control instanceof TextBox) {
             var textBox = (TextBox) control;
