@@ -2,16 +2,9 @@ package com.ControlFlow;
 
 public class Main {
     public static void main(String[] args) {
+        var employee = new Employee(50_000, 20);
+        employee.calculateWage();
 
-        var employee = new Employee();
-
-        employee.setBaseSalary(50_000);
-        employee.setExtrHours(10);
-        employee.setHourlyRate(20);
-
-        int wage = employee.calculateWage();
-
-        System.out.println(wage);
     }
     // Encapsulation in Employee class
     // public static int calculateWage(
