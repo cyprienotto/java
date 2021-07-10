@@ -15,4 +15,10 @@ public class TextBox extends UIControl {
     public void clear() {
         this.text = "";
     }
+    // Override =/= Overloading.
+    // Override toString() from Object Class
+    @Override
+    public String toString() {
+        return this.text;
+    }
 }
