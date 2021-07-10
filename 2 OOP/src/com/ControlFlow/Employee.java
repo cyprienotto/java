@@ -6,6 +6,11 @@ public class Employee {
     private int extrHours;
     private int hourlyRate;
 
+    // 14- Constructor() Overloading
+    public Employee(int baseSalary) {
+        this(baseSalary, 0);
+    }
+
     // Constructor use to initiate object creation
     // without a ReturnType
     public Employee(int baseSalary, int hourlyRate) {
