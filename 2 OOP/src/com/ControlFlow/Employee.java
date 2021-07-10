@@ -1,16 +1,30 @@
 package com.ControlFlow;
 
 public class Employee {
-    // template  Fields
+    // static member belong to Class vs Instance member belong
+    // to an object which is an instance of a Class
+    public static int numberOfEmployeeInstance;
+
+    // template  Fields ( instance member )
     private int baseSalary;
     private int extrHours;
     private int hourlyRate;
+
+    // 14- Constructor() Overloading
+    public Employee(int baseSalary) {
+        this(baseSalary, 0);
+    }
 
     // Constructor use to initiate object creation
     // without a ReturnType
     public Employee(int baseSalary, int hourlyRate) {
         setBaseSalary(baseSalary);
         setHourlyRate(hourlyRate);
+        numberOfEmployeeInstance++;
+    }
+
+    public static void printNumberOfEmployeeInstance() {
+        System.out.println(numberOfEmployeeInstance);
     }
 
     // blueprint  methods

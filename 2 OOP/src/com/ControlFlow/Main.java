@@ -3,7 +3,9 @@ package com.ControlFlow;
 public class Main {
     public static void main(String[] args) {
         var employee = new Employee(50_000, 20);
+        // call static method
         employee.calculateWage();
+        employee.printNumberOfEmployeeInstance();
 
     }
     // Encapsulation in Employee class
